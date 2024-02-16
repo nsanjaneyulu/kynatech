@@ -1,0 +1,254 @@
+@font-face {
+    font-family: 'sinkin_sans300_light';
+    src: url('../fonts/fontface/SinkinSans-300Light-webfont.eot');
+    src: url('../fonts/fontface/SinkinSans-300Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontface/SinkinSans-300Light-webfont.woff') format('woff'), url('../fonts/fontface/SinkinSans-300Light-webfont.ttf') format('truetype'), url('../fonts/fontface/SinkinSans-300Light-webfont.svg#sinkin_sans300_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'sinkin_sans500_light';
+    src: url('../fonts/fontface/SinkinSans-500Medium-webfont.eot');
+    src: url('../fonts/fontface/SinkinSans-500Medium-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontface/SinkinSans-500Medium-webfont.woff') format('woff'), url('../fonts/fontface/SinkinSans-500Medium-webfont.ttf') format('truetype'), url('../fonts/fontface/SinkinSans-500Medium-webfont.svg#sinkin_sans500_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    font-family: 'sinkin_sans300_light' !important;
+    font-size: 12px;
+}
+table tr,
+table td {
+    margin: 0;
+    font-family: 'sinkin_sans300_light' !important;
+    font-size: 12px;
+}
+#mani__menu ul.navbar-nav li.user img {
+    width: 50px;
+}
+#mani__menu ul.navbar-nav li:not(:first-child) a .fa {
+    font-size: 22px;
+}
+.btn-search {
+    background: #333;
+    color: #fff;
+}
+#mani__menu ul.navbar-nav li a {
+    font-weight: 700;
+}
+#mani__menu ul.navbar-nav li.user a {
+    color: #cc2e2e;
+}
+.footer_details {
+    border-top: 2px solid #d4d0d0;
+    padding: 20px 0px;
+}
+.footer_details ul li a {
+    color: #cc2e2e;
+    font-weight: 700;
+}
+.footer_details p {
+    font-weight: 700;
+}
+@media only screen and (min-width: 310px) {
+    .small_Align span {
+        display: block !important;
+        text-align: center !important;
+    }
+    .navbar-nav {
+        margin: 0px !important;
+    }
+}
+/* Extra Small Devices, Phones */
+
+@media only screen and (min-width: 480px) {
+    .small_Align span {
+        display: block !important;
+        text-align: center !important;
+    }
+    .navbar-nav {
+        margin: 0px !important;
+    }
+}
+@media screen and (min-width: 768px) {
+    .navbar .container-fluid,
+    #mani__menu {
+        display: flex !important;
+        align-items: center;
+    }
+    .navbar.navbar-default {
+        background: none;
+        border: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border-bottom: 1px solid #ccc;
+        -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+        -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+        box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    }
+    .navbar .container-fluid .navbar-header {
+        margin-right: 5em;
+    }
+    #mani__menu,
+    .search_Align {
+        width: 100%
+    }
+    .search_Align .input-group-btn {
+        width: 1% !important;
+    }
+    #mani__menu form,
+    #mani__menu form {
+        width: 100%;
+    }
+    #mani__menu .navbar-form .form-group {
+        width: 100%;
+        display: flex;
+    }
+    #mani__menu ul.navbar-nav {
+        display: flex;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    #mani__menu ul.navbar-nav li:not(:first-child) a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.header_Details {
+    background: #fff !important;
+}
+.sidebar_Details {
+    background: #fff !important;
+}
+.menu__popup-menu a {
+    color: #777 !important;
+    text-decoration: none;
+    ;
+}
+.menu__popup-menu a:hover {
+    color: #000 !important;
+    text-decoration: none;
+    ;
+}
+.collapse_Allign {
+    display: block!important;
+}
+.navcollapse_Allign>li,
+.navcollapse_Allign {
+    float: left !important;
+}
+.collapse_hide {
+    display: none !important;
+}
+#sidenav01 li {
+    position: relative;
+}
+#sidenav01 .menu__popup-menu {
+    display: none;
+    position: absolute;
+    border: 1px solid #ddd;
+    z-index: 1000;
+    background: #fff;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+    top: 100%;
+    right: 0;
+    margin: 0;
+    transform: translateX(0%) translateY(0);
+    left: auto
+}
+#sidenav01 .menu__popup-menu a {
+    padding: 10px;
+    display: block;
+}
+#sidenav01 .menu__popup-menu.active {
+    display: inline-table;
+}
+.menu__popup-menu.active {
+    display: inline-table;
+    left: 190px;
+    transform: translateX(100%) translateY(0);
+    top: 0;
+}
+/* dashboard navigation start */
+
+.x_panel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 17px;
+    display: inline-block;
+    background: #fff;
+    border: 1px solid #E6E9ED;
+    -webkit-column-break-inside: avoid;
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+    opacity: 1;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.x_title {
+    border-bottom: 2px solid #E6E9ED;
+    padding: 1px 5px 6px;
+    margin-bottom: 10px;
+}
+.x_title .filter {
+    width: 40%;
+    float: right;
+}
+.x_title h2 {
+    margin: 5px 0 6px;
+    float: left;
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 15px;
+}
+.x_title h2 small {
+    margin-left: 10px;
+    color: #5FB0E3;
+    font-size: 12px;
+}
+.x_title span {
+    color: #BDBDBD;
+}
+.x_content {
+    padding: 0 5px 6px;
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    margin-top: 5px;
+    /* border-bottom: 1px solid; */
+}
+.x_content h4 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.tableAlign
+{
+    height: 361px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.tableAlignLeft
+{
+    height: 153px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+/* dashboard navigation end */
+.text-color span {
+    color: #5fb0e3;
+}
+.text-bold p {
+    margin: 0px;
+    color: #f99a13;
+    font-size: 14px;
+}

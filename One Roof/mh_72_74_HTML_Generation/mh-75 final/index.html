@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Mi Home</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+      <link href="css/custom.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/myhome_styles.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="js/myhome_script.js"></script>
+   </head>
+   <body>
+      <aside id="menu__sidebar" class="">
+         <header class="flex items_space-between">
+            <a href="#"><img src="images/logo.png" alt="" id="logo"></a>
+            <a id="menu_toggle" href="#"><i class="fa fa-bars icon__menu"></i></a> </div>
+         </header>
+         <nav id="menu__navigation" class="navbar navbar-default">
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-menu">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand hide" href="#">Menu</a>
+            </div>
+            <div class="collapse navbar-collapse main-menu">
+               <h3> &nbsp;CATEGORIES</h3>
+               <ul class="list-unstyled">
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Construction">
+                     <i class="fa fa-building icon__menu-item"></i><span class="menu-name">CONSTRUCTION</span><i class="icon__settings fa fa-cog "></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="1">Floor Plan</a></li>
+                        <li><a href="#" data-menuId="2">Electric Plan</a></li>
+                        <li><a href="#" data-menuId="3">Elevation</a></li>
+                        <li><a href="#" data-menuId="4">Plimbing</a></li>
+                        <li><a href="#" data-menuId="5">Sprinkler System</a></li>
+                        <li><a href="#" data-menuId="6">Surveys</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">SubCategory</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Permits">
+                     <i class="fa fa-check icon__menu-item"></i><span class="menu-name">PERMITS</span><i class="icon__settings fa fa-cog"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="7">Engineering</a></li>
+                        <li><a href="#" data-menuId="8">Soil and Perc Tests</a></li>
+                        <li><a href="#" data-menuId="9">Test Custom Subcategory 3</a></li>
+                        <li><a href="#" data-menuId="10">Test Custom Subcategory 4</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">SubCategory</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Inspections">
+                     <i class="fa fa-search icon__menu-item"></i><span class="menu-name">INSPECTIONS</span><i class="icon__settings fa fa-cog"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="11">County Inspection</a></li>
+                        <li><a href="#" data-menuId="12">Pre-drywall</a></li>
+                        <li><a href="#" data-menuId="13">Final</a></li>
+                        <li><a href="#" data-menuId="14">Inspection-other</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">SubCategory</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Utilities">
+                     <i class="fa fa-phone-square icon__menu-item"></i><span class="menu-name">UTILITIES</span><i class="icon__settings fa fa-cog"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="15">Septic System</a></li>
+                        <li><a href="#" data-menuId="16">Well and Pump</a></li>
+                        <li><a href="#" data-menuId="17">Fown Water</a></li>
+                        <li><a href="#" data-menuId="18">own Sewer</a></li>
+                        <li><a href="#" data-menuId="15">Gas</a></li>
+                        <li><a href="#" data-menuId="16">Electric</a></li>
+                        <li><a href="#" data-menuId="17">elecom</a></li>
+                        <li><a href="#" data-menuId="18">Boiler, Piping</a></li>
+                        <li><a href="#" data-menuId="18">Sump Pump</a></li>
+                        <li><a href="#" data-menuId="15">Water Softener System</a></li>
+                        <li><a href="#" data-menuId="16">Humidifier</a></li>
+                        <li><a href="#" data-menuId="16">Smoke, CO2 Alarms</a></li>
+                        <li><a href="#" data-menuId="17">Intercom System</a></li>
+                        <li><a href="#" data-menuId="18">Security System</a></li>
+                        <li><a href="#" data-menuId="18">Sprinkler System</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">Subcategory</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Utilities">
+                     <i class="fa fa-tachometer icon__menu-item"></i><span class="menu-name">HVAC</span><i class="icon__settings fa fa-cog"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="15">Furnace/Heat Pump</a></li>
+                        <li><a href="#" data-menuId="16">Central AC</a></li>
+                        <li><a href="#" data-menuId="17">Air Handler</a></li>
+                        <li><a href="#" data-menuId="18">ir Filter</a></li>
+                        <li><a href="#" data-menuId="15">Radiators</a></li>
+                        <li><a href="#" data-menuId="16">HVAC Controls</a></li>
+                        <li><a href="#" data-menuId="17">Solar Panel System</a></li>
+                        <li><a href="#" data-menuId="18">Ductwork, Grilles, Registers</a></li>
+                        <li><a href="#" data-menuId="18">Whole-House Ventilation(HRV,ERV,Exhaust Only,Other)</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">Subcategory</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Utilities">
+                     <i class="fa fa-university icon__menu-item"></i><span class="menu-name">EXTERIOR</span><i class="icon__settings fa fa-cog"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="15">Vinyl or Composite Siding</a></li>
+                        <li><a href="#" data-menuId="16">Wood Siding</a></li>
+                        <li><a href="#" data-menuId="17">Brick Veneer</a></li>
+                        <li><a href="#" data-menuId="18">Stone Veneer</a></li>
+                        <li><a href="#" data-menuId="15">Stucco</a></li>
+                        <li><a href="#" data-menuId="16">Soffit/Gable Vents</a></li>
+                        <li><a href="#" data-menuId="17">Window/Door Trim</a></li>
+                        <li><a href="#" data-menuId="18">Exterior Paint, Stain, Caulk</a></li>
+                        <li><a href="#" data-menuId="18">Other Exterior Trim</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">Subcategory</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Utilities">
+                     <i class="fa fa-money icon__menu-item"></i><span class="menu-name">FINANCIAL</span><i class="icon__settings fa fa-cog"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="15">Note</a></li>
+                        <li><a href="#" data-menuId="16">Deed</a></li>
+                        <li><a href="#" data-menuId="17">Mortgage</a></li>
+                        <li><a href="#" data-menuId="18">Property Tax</a></li>
+                        <li><a href="#" data-menuId="15">Current Home Estimate</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">Subcategory</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-title="Utilities">
+                     <i class="fa fa-folder icon__menu-item"></i><span class="menu-name">GENERAL</span><i class="icon__settings fa fa-cog"></i>
+                     </a>
+                     <ul class="dropdown-menu">
+                        <li><a href="#" data-menuId="15">HOA</a></li>
+                     </ul>
+                     <ul class="menu__popup-menu list-unstyled">
+                        <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                        <li><a href="#modal__subCategory" data-toggle="modal">Subcategory</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </aside>
+      <div class="" id="main-content">
+         <header class="menu__topbar flex items-space-between vertical_center">
+            <a href="#"><img src="images/logo.png" alt="" class="logo"></a>
+            <form>
+               <div class="form-group">
+                  <div class="input-group" id="search__main">
+                     <span class="input-group-btn">
+                        <!-- All dropdown -->
+                        <button class="btn btn-default dropdown-toggle" type="button" id="search-option" data-toggle="dropdown">All<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="search-option">
+                           <li><a href="#">CONSTRUCTION</a></li>
+                           <li><a href="#">PERMITS</a></li>
+                           <li><a href="#">INSPECTIONS</a></li>
+                           <li><a href="#">UTILITIS</a></li>
+                           <li><a href="#">HAVC</a></li>
+                           <li><a href="#">EXTERIOR</a></li>
+                           <li><a href="#">FINANCIAL</a></li>
+                           <li><a href="#">GENERAL</a></li>
+                        </ul>
+                     </span>
+                     <input type="text" class="form-control" placeholder="Search here" id="input__main-search">
+                     <span class="input-group-btn">
+                     <button class="btn btn-search" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                     </span>
+                     <!-- Search Results -->
+                  </div>
+               </div>
+            </form>
+            <nav class="nav_menu">
+            <ul class="nav navbar-nav pull-right ulAlign">
+               <li class="">
+                  <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown"> <strong class="blue">Hello, James Smith</strong>
+                  <button type="button" class="btn btn-search padd-all-5"> <span class="fa fa-user icon-size icon-color"> </span> <span class=" fa fa-caret-down icon-color"> </span></button>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                     <li><a href="javascript:;"> Profile</a> </li>
+                     <li>
+                        <a href="javascript:;"> <span class="badge bg-red pull-right">50%</span> <span>Settings</span> </a>
+                     </li>
+                     <li> <a href="javascript:;">Help</a> </li>
+                     <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a> </li>
+                  </ul>
+               </li>
+               <li class="">
+                  <a href="#" class="user-profile dropdown-toggle" data-toggle="dropdown">
+                  <button type="button" class="btn btn-search padd-all-5"><span class="fa fa-cog icon-color icon-size"> </span> <span class=" fa fa-caret-down icon-color"> </span></button>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
+                     <li><a href="javascript:;"> Profile</a> </li>
+                     <li>
+                        <a href="javascript:;"> <span class="badge bg-red pull-right">50%</span> <span>Settings</span> </a>
+                     </li>
+                     <li> <a href="javascript:;">Help</a> </li>
+                     <li><a href="#"><i class="fa fa-sign-out pull-right"></i> Log Out</a> </li>
+                  </ul>
+               </li>
+            </ul>
+         </header>
+         <section class="container-flui body">
+            <div class="page-content" role="main">
+               <div class="col-xs-12">
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">First Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="First Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Last Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Last Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">user Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="User Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Password</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Password">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-3">
+                     <a class="btn btn-primary" href="login_successful.html">Submit</a>
+                  </div>
+                  <div class="col-sm-3">
+                     <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Reset</button>
+                  </div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">First Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="First Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Last Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Last Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">user Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="User Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Password</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Password">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-3">
+                     <a class="btn btn-primary" href="login_successful.html">Submit</a>
+                  </div>
+                  <div class="col-sm-3">
+                     <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Reset</button>
+                  </div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">First Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="First Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Last Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Last Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">user Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="User Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Password</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Password">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-3">
+                     <a class="btn btn-primary" href="login_successful.html">Submit</a>
+                  </div>
+                  <div class="col-sm-3">
+                     <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Reset</button>
+                  </div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">First Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="First Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Last Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Last Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">user Name</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="User Name">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="form-group col-sm-12">
+                     <label for="exampleInputEmail1">Password</label>
+                     <input type="text" class="form-control" id="email" name="email" placeholder="Password">
+                  </div>
+                  <div class="clearfix"></div>
+                  <div class="col-sm-3">
+                     <a class="btn btn-primary" href="login_successful.html">Submit</a>
+                  </div>
+                  <div class="col-sm-3">
+                     <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Reset</button>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+         </section>
+         <!-- /PAGE CONTENT SECTION ENDS -->
+         <!-- FOOTER CONTENT SECTION STARTS -->
+         <footer>
+            <div class="copyright-info">
+               <div class="row">
+                  <div class="col-sm-3 col-xs-12 text-right">MiHome &copy; 2016</div>
+                  <div class="col-sm-9 col-xs-12 text-right">Support | Terms of Service | Privacy Polocy</div>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+         </footer>
+         <!-- /FOOTER CONTENT SECTION ENDS -->
+      </div>
+   </body>
+</html>

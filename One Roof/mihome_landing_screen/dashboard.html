@@ -1,0 +1,556 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Mi Home</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/my_Styles.css">
+      <link rel="stylesheet" href="css/sidebar_Styles.css">
+      <style type="text/css">
+         .fa
+         {
+         cursor: pointer;
+         }
+      </style>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/Chart.min.js"></script>
+      <script src="js/my_Scripts.js"></script>
+   </head>
+   <body style="background: #eee !important;">
+      <nav class=" nav-Align navbar navbar-default header_Details">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed collapse_hide" data-toggle="collapse" data-target="#mani__menu" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#"><img src="img/logo.jpg" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse collapse_Allign" id="mani__menu">
+               <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                     <div class="input-group search_Align"> <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">All <span class="caret"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn" style="
+                           border: 3px solid #ccc; background: #ccc;
+                           ">
+                        <button class="btn btn-search" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span> 
+                     </div>
+                  </div>
+               </form>
+               <ul class="nav navbar-nav navcollapse_Allign">
+                  <li class="user small_Align">
+                     <a href="#">
+                     <img src="img/profile_Pic.jpg" class="img-circle" alt="">
+                     </a>
+                  </li>
+                  <li class="small_Align">
+                     <a href="#">
+                     <span class="fa fa-question-circle" aria-hidden="true"></span>
+                     <span>Help</span>
+                     </a>
+                  </li>
+                  <li class="small_Align">
+                     <a href="#">
+                     <span class="fa fa-cog" aria-hidden="true"></span>
+                     <span>Settings</span>
+                     </a>
+                  </li>
+                  <li class="small_Align">
+                     <a href="#">
+                     <span class="fa fa-circle-o-notch" aria-hidden="true"></span>
+                     <span>Logout</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="clearfix"></div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <section>
+         <div class="col-md-3 col-lg-2">
+            <div class="navbar navbar-default sidebar_Details" role="navigation">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <span class=" navbar-brand visible-xs">CATEGORIES MENU</span>
+               </div>
+               <div class="navbar-collapse collapse sidebar-navbar-collapse" style="padding:0px !important;">
+                  <h3 class="category_nav_thumbnail"><span>CATEGORIES</span></h3>
+                  <ul class="nav navbar-nav sidebar" id="sidenav01">
+                     <li class="branch active">
+                        <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01" class="collapsed">
+                        <span class="fa fa-building" aria-hidden="true"></span> Construction <span class="fa fa-cog icon__settings pull-right" aria-hidden="true"></span>
+                        </a>
+                        <ul class="menu__popup-menu list-unstyled">
+                           <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                           <li><a href="#modal__subCategory" data-toggle="modal">Add Sub - Category</a></li>
+                        </ul>
+                        <div class="collapse" id="toggleDemo" >
+                           <ul class="nav nav-list subnav">
+                              <li class="list-display"><a href="#">Elevation</a></li>
+                              <li class="list-display active"><a href="#">Floor Plan</a></li>
+                              <li class="list-display"><a href="#">Sprinkler System</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="branch">
+                        <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
+                        <span class="fa fa-check" aria-hidden="true"></span> Permits <span class="fa fa-cog icon__settings pull-right" aria-hidden="true"></span>           </a>
+                        <ul class="menu__popup-menu list-unstyled">
+                           <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                           <li><a href="#modal__subCategory" data-toggle="modal">Add Sub - Category</a></li>
+                        </ul>
+                        <div class="collapse" id="toggleDemo2">
+                           <ul class="nav nav-list subnav">
+                              <li  class="list-display"><a href="#">Balcony</a></li>
+                              <li  class="list-display active"><a href="#">Guest House</a></li>
+                              <li  class="list-display"><a href="#">Master Room</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="branch"><a href="#"><span class="fa fa-search" aria-hidden="true"></span> Inspections <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-phone-square" aria-hidden="true"></span> Utilities <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-tachometer" aria-hidden="true"></span> HVAC <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-university" aria-hidden="true"></span> Exterior <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-money" aria-hidden="true"></span> Financial <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-folder" aria-hidden="true"></span> General <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                  </ul>
+               </div>
+               <!--/.nav-collapse -->
+            </div>
+         </div>
+         <div class="col-md-9 col-lg-10">
+            <div class="row">
+               <div class="col-sm-6 col-xs-12">
+                  <div class="x_panel weekHide weekExpandContent">
+                     <div class="x_title">
+                        <h2>THIS WEEk HISTORY </h2>
+                        <ul class="navbar-right list-inline">
+                           <li><i class="fa fa-chevron-down weekShowHideClick"></i> </li>
+                           <li class="dropdown">
+                              <i class="fa fa-expand weekExpand"></i>
+                           </li>
+                           <li><i class="fa fa-close weekHideClick"></i></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                     </div>
+                     <div class="x_content weekShowHide">
+                        <div class="table-responsive tableAlignLeft">
+                           <table class="table table-bordered">
+                              <thead>
+                                 <tr>
+                                    <th class="col-xs-4">Alert Name</th>
+                                    <th class="col-xs-4">Alert Type</th>
+                                    <th class="col-xs-4">Acknowledged</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="x_title">
+                        <h2>PREVIOUS WEEK HISTORY </h2>
+                        <div class="clearfix"></div>
+                     </div>
+                     <div class="x_content weekShowHide">
+                        <div class="table-responsive tableAlignLeft">
+                           <table class="table table-bordered">
+                              <thead>
+                                 <tr>
+                                    <th class="col-xs-4">Alert Name</th>
+                                    <th class="col-xs-4">Alert Type</th>
+                                    <th class="col-xs-4">Acknowledged</th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4">Lorem ipsum</td>
+                                    <td class="col-xs-4"><button class="btn btn-warning btn-xs alert-new">NEW</button>
+                                       <button class="btn btn-warning btn-xs alert-later">LATER</button>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="weekExpandModal" class="modal fade" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-body">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xs-12">
+                  <div class="x_panel activityHide activityExpandContent">
+                     <div class="x_title">
+                        <h2>ACTIVITY HISTORY </h2>
+                        <ul class="navbar-right list-inline">
+                           <li><i class="fa fa-chevron-down activityShowHideClick"></i> </li>
+                           <li class="dropdown">
+                              <i class="fa fa-expand activityExpand"></i>
+                           </li>
+                           <li><i class="fa fa-close activityHideClick"></i> </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                     </div>
+                     <div class="x_content activityShowHide">
+                        <div class="tableAlign">
+                           <div class="table-responsive">
+                              <table class="table table-striped">
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <div class="text-color">
+                                             <p>Repair Cooking Range</p>
+                                             <span>A&amp;H Repair Services</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <p><strong>$30,000</strong></p>
+                                             <span>12 September 2016</span> 
+                                          </div>
+                                       </td>
+                                       <td>
+                                          <div class="text-bold">
+                                             <button type="button" class="btn btn-warning"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></button>
+                                          </div>
+                                       </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="activityExpandModal" class="modal fade" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-body">
+                     </div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+               <div class="col-sm-6 col-xs-12">
+                  <div class="x_panel activityHide activityExpandContent">
+                     <div class="x_title">
+                        <h2>SPEND BY CATEGORY </h2>
+                        <ul class="navbar-right list-inline">
+                           <li><i class="fa fa-chevron-down activityShowHideClick"></i> </li>
+                           <li class="dropdown">
+                              <i class="fa fa-expand activityExpand"></i>
+                           </li>
+                           <li><i class="fa fa-close activityHideClick"></i> </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                     </div>
+                     <div class="x_content activityShowHide">
+                        <canvas id="countries" width="600" height="400"></canvas>
+                     </div>
+                  </div>
+                  <div id="activityExpandModal" class="modal fade" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-body">
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-xs-12">
+                  <div class="x_panel weekHide weekExpandContent">
+                     <div class="x_title">
+                        <h2>SPEND BY MONTH </h2>
+                        <ul class="navbar-right list-inline">
+                           <li><i class="fa fa-chevron-down weekShowHideClick"></i> </li>
+                           <li class="dropdown">
+                              <i class="fa fa-expand weekExpand"></i>
+                           </li>
+                           <li><i class="fa fa-close weekHideClick"></i></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                     </div>
+                     <div class="x_content weekShowHide">
+                        <canvas id="buyers" width="600" height="400"></canvas>
+                     </div>
+                  </div>
+                  <div id="weekExpandModal" class="modal fade" aria-labelledby="myModalLabel" aria-hidden="true">
+                     <div class="modal-body">
+                     </div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+            </div>
+         </div>
+      </section>
+      <div class="clearfix"></div>
+      <footer class="footer_details">
+         <p class="col-sm-6">Copyright @ 2016 by <a target="_blanck" href="http://anjaneyulu.info/">Allwyn Corporation</a>All rights reserved.</p>
+         <ul class="col-sm-6 list-inline text-right">
+            <li><a href="#">Suport</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+         </ul>
+      </footer>
+   </body>
+</html>

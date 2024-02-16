@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>MediaWorks - Admin_Products-Attachments</title>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+      <link rel="stylesheet" href="css/bootstrap-multiselect.css" type="text/css"/>
+      <link rel="stylesheet" href="css/multiple-select.css" type="text/css"/>
+      <!-- Include Twitter Bootstrap and jQuery: -->
+      <script type="text/javascript" src="javascripts/jquery.js"></script>
+      <script type="text/javascript" src="javascripts/jquery.dataTables.min.js"></script>
+      <script type="text/javascript" src="javascripts/bootstrap.js"></script>
+      <script type="text/javascript" src="javascripts/bootstrap-multiselect.js"></script>
+      <script type="text/javascript" src="javascripts/mediaworks_script.js"></script> 
+      <!-- Latest compiled and minified CSS -->
+      <!-- Custom CSS -->
+      <link href="css/styles.css" rel="stylesheet">
+      <style type="text/css"></style>
+   </head>
+   <body>
+      <!-- Header START'S Here -->
+      <header>
+         <div class="container-fluid main_header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-sm-8 hidden-xs pull-left">
+                     <a href="Dashboard.html"><img class="img-responsive" src="images/mediaWorks_logo.png" alt="#"></a>
+                  </div>
+                  <!-- Small Device Code Start-->
+                  <div class="col-xs-12 visible-xs" align="middle">
+                     <a href="Dashboard.html"><img class="img-responsive" src="images/mediaWorks_logo.png" alt="#"></a>
+                  </div>
+                  <!-- Small Device Code End-->
+                  <div class="col-sm-4 hidden-xs" align="right">
+                     <div class="header_right">
+                        <ul class="list-inline">
+                           <li class="welcome">
+                              <p>Welcome Johnson</p>
+                           </li>
+                           <li class="help">
+                              <a href="#">
+                              <img src="images/Help.png" >
+                              </a>
+                           </li>
+                           <li class="logout">
+                              <a href="#">
+                              <img src="images/logout.png" >
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Small Device Code Start-->
+                  <div class="col-xs-12 visible-xs" align="middle">
+                     <div class="header_right">
+                        <ul class="list-inline">
+                           <li class="welcome">
+                              <p>Welcome Johnson</p>
+                           </li>
+                           <li class="help">
+                              <a href="#">
+                              <img src="images/Help.png" >
+                              </a>
+                           </li>
+                           <li class="logout">
+                              <a href="#">
+                              <img src="images/logout.png" >
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <!-- Small Device Code End-->
+               </div>
+            </div>
+         </div>
+      </header>
+      <div class="clearfix"></div>
+      <!-- Header END'S Here -->
+      <div class="container">
+         <div class="col-md-10 col-md-offset-1">
+            <div class="col-sm-12 col-md-12 title_border hidden-xs">
+               <h3>Products</h3>
+            </div>
+            <div class="col-sm-12 col-md-12 title_border visible-xs" style="text-align:center;">
+               <h3>Products</h3>
+            </div>
+            <form class="form-horizontal">
+               <div class="col-md-12 separator">
+                  <h5 class="" style="padding-bottom:20px;"><b>Attachments</b></h5>
+                  <div class="form-group">
+                     <label class="col-sm-3 control-label my_label">Main Image</label>
+                     <div class="col-sm-9">
+                         <input type="file" name="img[]" class="file">
+                         <div class="input-group col-xs-12">
+                           <input type="text" class="form-control my_text_fields" disabled placeholder="Upload Image">
+                           <span class="input-group-btn">
+                             <label class="browse btn my_btn_default" type="button"><span class="glyphicon glyphicon-folder-open color-white"></span></label>
+                           </span>
+                         </div>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label class="col-sm-3 control-label my_label">Title</label>
+                     <div class="col-sm-9">
+                        <input class="form-control my_text_fields">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label class="col-sm-3 control-label my_label">Content Area</label>
+                     <div class="col-sm-9">
+                        <textarea class="form-control my_textarea" rows="12" id="ck_edit"></textarea>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            
+            <div class="clearfix"></div>
+            <div class="col-md-12" style="padding-top:15px;">
+               <div class="pull-right">
+                  <button type="button" class="btn my_btn_default" data-dismiss="modal">CANCEL</button>
+                  <button type="button" class="btn my_btn_primary">SAVE</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clearfix"></div>
+      <footer class="my_footer">
+         <div class="container-fluid">
+            <span class="copyright">Copyright © 2016 Mediaworks Marketing, Inc. All rights reserved.</strong></span>
+         </div>
+      </footer>
+
+   </body>
+</html>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.2/ckeditor.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.2/adapters/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('textarea#ck_edit').ckeditor({
+    height: "200px",
+    toolbarStartupExpanded: true,
+    width: "100%"   
+});
+
+});
+</script>

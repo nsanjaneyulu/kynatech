@@ -1,0 +1,585 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my_Styles.css">
+    <link rel="stylesheet" href="css/sidebar_Styles.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/my_Scripts.js"></script>
+    <style type="text/css">
+        /* e check styles writen by anji start */
+        .nav-tabs { border-bottom: 1px solid #DDD; }
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover { border-width: 0; }
+        .nav-tabs > li > a { border: none; color: #666; }
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover { border: none; font-weight: bold; color: #f00 !important; background: transparent; }
+        .nav-tabs > li > a::after { content: ""; background: #f00; height: 2px; position: absolute; width: 100%; left: 0px; bottom: -1px; transition: all 250ms ease 0s; transform: scale(0); }
+        .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform: scale(1); }
+        .tab-nav > li > a::after { background: #21527d none repeat scroll 0% 0%; color: #fff; }
+        .tab-pane { padding: 15px 0; }
+        .tab-content{padding:20px}
+        .card { }
+        body
+        {
+            background: #f1f1f1;
+        }
+        .borderBottom
+        {
+            border-bottom: 1px solid #DDD;
+            margin: 20px 0px;
+        }
+        .nav-tabs>li.active>a
+        {
+            background-color: none !important;
+        }
+        /* e check styles writen by anji end */
+    </style>
+</head>
+<body style="background: #eee !important;">
+<nav class=" nav-Align navbar navbar-default header_Details">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed collapse_hide" data-toggle="collapse" data-target="#mani__menu" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="img/logo.jpg" /></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse collapse_Allign" id="mani__menu">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <div class="input-group search_Align"> <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">All <span class="caret"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn" style="
+                           border: 3px solid #ccc; background: #ccc;
+                           ">
+                        <button class="btn btn-search" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <ul class="nav navbar-nav navcollapse_Allign">
+                <li class="user small_Align">
+                    <a href="#">
+                        <img src="img/profile_Pic.jpg" class="img-circle" alt="">
+                    </a>
+                </li>
+                <li class="small_Align">
+                    <a href="#">
+                        <span class="fa fa-question-circle" aria-hidden="true"></span>
+                        <span>Help</span>
+                    </a>
+                </li>
+                <li class="small_Align">
+                    <a href="#">
+                        <span class="fa fa-cog" aria-hidden="true"></span>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li class="small_Align">
+                    <a href="#">
+                        <span class="fa fa-circle-o-notch" aria-hidden="true"></span>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="clearfix"></div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p style="font-size: 26px; padding-top: 20px;">Make a payment</p>
+                <!-- Nav tabs -->
+                <div class="card">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">e Check</a></li>
+                        <!--                        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Credit Card</a></li>-->
+                    </ul>
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <form class="form-horizontal">
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Payment details</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Amount">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Memo</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Memo">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <!--                                <div class="form-group col-sm-6">-->
+                                <!--                                    <label for="inputEmail3" class="col-sm-4 control-label">Amount</label>-->
+                                <!--                                    <div class="col-sm-8">-->
+                                <!--                                        <div class="input-group">-->
+                                <!--                                            <span class="input-group-addon">$</span>-->
+                                <!--                                            <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="form-group col-sm-6" style="float: right">-->
+                                <!--                                    <label class="col-sm-4 control-label">Payment</label>-->
+                                <!--                                    <div class="col-sm-8">-->
+                                <!--                                        <label class="checkbox-inline">-->
+                                <!--                                            <input type="checkbox" value="option1"> one-time-->
+                                <!--                                        </label>-->
+                                <!--                                    </div>-->
+                                <!--                                </div>-->
+                                <!--                                <div class="clearfix"></div>-->
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Account Details</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Bank Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Bank Name">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Type of Account</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Checking</option>
+                                            <option>Savings</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6" >
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Account #</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Account #">
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Routing #</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Routing #">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Billing Address</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Address Line 1</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Address Line 1">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Address Line 2</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Address Line 2">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">City</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>City</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">State</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>State</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Country</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Country</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Zip Code</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Zip Code">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12" style="padding-bottom: 20px;"><button type="button" class="pull-right btn btn-danger" style="margin-left: 10px;">Pay Now</button><button type="button" class="btn btn-danger pull-right">Cancel</button></div>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <form class="form-horizontal">
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Invoice Details</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Allwyn Invoice #</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Allwyn Invoice #">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Services</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Services</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">$</span>
+                                            <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Payment</label>
+                                    <div class="col-sm-8">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked"> One-time
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" > Recurring
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Credit Card</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Credit Card Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Credit Card Number">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Account Number</label>
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <select class="form-control">
+                                                    <option>MM</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select class="form-control col-sm-3">
+                                                    <option>YYYY</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="email" class="form-control col-sm-2" placeholder="CVV">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label"></label>
+                                    <div class="col-sm-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Save this card for faster checkout
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Billing Address</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Address Line 1</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Address Line 1">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Address Line 2</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Address Line 2">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">City</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>City</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">State</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>State</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Country</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Country</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Zip Code</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Zip Code">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12" style="padding-bottom: 20px;"><button type="button" class="pull-right btn btn-danger" style="margin-left: 10px;">Pay Now</button><button type="button" class="btn btn-danger pull-right">Cancel</button></div>
+                            </form>
+                            <form class="form-horizontal hide">
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Invoice Details</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Allwyn Invoice #</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Allwyn Invoice #">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Services</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Services</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Amount</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <span class="input-group-addon">$</span>
+                                            <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Payment</label>
+                                    <div class="col-sm-8">
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> One-time
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" checked="checked"> Recurring
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Frequency</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Frequency</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Start Date</label>
+                                    <div class="col-sm-8">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Amount" aria-describedby="basic-addon1"><span class="input-group-addon">$</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Nuber of Times</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Nuber of Times</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">End Date</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="End Date" readonly>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Credit Card</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Credit Card Number</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Credit Card Number">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Account Number</label>
+                                    <div class="col-sm-8">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <select class="form-control">
+                                                    <option>MM</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <select class="form-control col-sm-3">
+                                                    <option>YYYY</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <input type="email" class="form-control col-sm-2" placeholder="CVV">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label"></label>
+                                    <div class="col-sm-8">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> Save this card for faster checkout
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12">
+                                    <p style="font-size: 22px;">Billing Address</p>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Name</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Address Line 1</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Address Line 1">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Address Line 2</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" placeholder="Address Line 2">
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">City</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>City</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">State</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>State</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-sm-6" style="float: right">
+                                    <label class="col-sm-4 control-label">Country</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-control">
+                                            <option>Country</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="form-group col-sm-6">
+                                    <label for="inputEmail3" class="col-sm-4 control-label">Zip Code</label>
+                                    <div class="col-sm-8">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Zip Code">
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="borderBottom"></div>
+                                <div class="col-sm-12" style="padding-bottom: 20px;"><button type="button" class="pull-right btn btn-danger" style="margin-left: 10px;">Pay Now</button><button type="button" class="btn btn-danger pull-right">Cancel</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="clearfix"></div>
+<footer class="footer_details">
+    <p class="col-sm-6">Copyright @ 2016 by <a target="_blanck" href="http://anjaneyulu.info/">Allwyn Corporation</a>All rights reserved.</p>
+    <ul class="col-sm-6 list-inline text-right">
+        <li><a href="#">Suport</a></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+    </ul>
+</footer>
+</body>
+</html>

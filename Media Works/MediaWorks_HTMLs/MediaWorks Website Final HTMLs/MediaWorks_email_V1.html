@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Allervue Email</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;padding: 0;text-decoration: none; list-style: none;
+        }
+        p {
+            margin: 0;
+        }
+        ._flex {
+            display: flex;
+            /* align-items: center; */;
+        }
+        .invoice {
+            width: 21cm;
+            margin: 2em auto 0;
+        }
+        .invoice * {
+            margin: 0;
+            padding: 0;
+        }
+        .invoice header {
+            margin-bottom: 2em;
+        }
+        .invoice div small {
+            text-transform: uppercase;
+            display: block;
+            margin: 0;
+        }
+        .invoice .box {
+            background: #eee;
+            box-shadow: inset 0 0 0 1px #fff;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .invoice .row {
+            margin: 0;
+        }
+        .invoice .table__purchased {
+            margin-top: 2em;
+        }
+        .invoice .table__purchased thead tr {
+            background: #ddd;
+        }
+        .invoice .table__purchased thead tr th:last-child {
+            width: 20%;
+            text-align: right;
+        }
+        .invoice .table__purchased tbody td:last-child, .invoice .table__purchased tfoot td:last-child {
+            text-align: right;
+        }
+        .invoice .table__purchased tfoot {
+            font-weight: 700;
+            border-bottom: 1px solid #ddd;
+        }
+        .invoice .table__purchased tfoot td:first-child {
+            border-right: 1px solid #ddd;
+            padding-right: 2em;
+        }
+        .p-0 {
+            padding: 0 !important;
+        }
+        .m-0 {
+            margin: 0 !important;
+        }
+        .h-100 {
+            height: 100%;
+        }
+        .vcenter {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<section class="container">
+    <div class="invoice page">
+        <header class="row _flex m-0">
+            <div class="col-xs-4 p-0">
+                <div class="box">
+                    <small>AllerVue id</small>
+                    <p><a href="#">madhu.garlanka@gmail.com</a></p>
+                </div>
+                <div class="box">
+                    <small>date</small>
+                    <p>Oct 30, 2016</p>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 p-0">
+                        <div class="box"></div>
+                    </div>
+                    <div class="col-xs-6 p-0">
+                        <div class="box"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4 p-0">
+                <div class="box h-100 vcenter">
+                    <small>Billed to</small>
+                    <address>
+                        Madhu Garlanka <br> 2830 Fox Mili Road <br> Oak Hill, VA 20171-1809 <br> USA
+                    </address>
+                </div>
+            </div>
+            <div class="col-xs-4 p-0">
+                <div class="box h-100 vcenter text-right">
+                    <small>Total</small>
+                    <h4>0.94</h4>
+                </div>
+            </div>
+        </header>
+        <table class="table table__purchased">
+            <thead>
+            <tr>
+                <th>Purchased Item</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni adipisci cupiditate sequi, distinctio velit natus aut, sed! Dolorum repellat inventore iusto voluptatum a accusamus molestiae, quidem, impedit sapiente repudiandae dolores!</td>
+                <td>$0.95</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <td class="text-right"> Total </td>
+                <td> $0.95 </td>
+            </tr>
+            </tfoot>
+        </table>
+        <p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum officiis, esse? Est aperiam molestias neque praesentium, odio explicabo autem at! Quos quaerat sit, ut aspernatur obcaecati dolore perferendis, enim deleniti!</small></p>
+    </div>
+</section>
+</body>
+</html>

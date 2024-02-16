@@ -1,0 +1,301 @@
+/*MediaWorks Dashboard START*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.add_row-1, .add_row-2{
+  padding-left: 0px;
+}
+
+.add_row-3{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+@media only screen and (min-width: 310px) and (max-width: 760px) {
+
+  .add_row-1, .add_row-2,.add_row-3{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+/*ck editor START*/
+#cke_12, #cke_27, #cke_19, #cke_32, #cke_63, #cke_67, #cke_80, #cke_83{
+  display: none !important;
+}
+
+/*ck editor END*/
+
+
+.main_header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #3f3f3f;
+}
+
+.dashboard_icons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+.welcome{
+    color: #e51636;
+}
+
+.logout{
+    border-left: 1px solid #e51636;
+}
+
+.help{
+    border-left: 1px solid #e51636;
+}
+
+.header_right{
+    margin-top: 6%;
+}
+
+.dashboard_icons_title{
+    color: #3f3f3f;
+}
+
+.copyright {
+    color: white;
+}
+
+.my_form_body{
+  padding-top: 20px;
+}
+
+.my_label{
+    font-weight: normal;
+}
+
+.mandatory{
+    color: red;
+}
+
+.my_textarea{
+  border-radius: 0px;
+}
+
+.my_text_fields{
+    border-radius: 0px;
+}
+
+.my_btn_primary{
+    background-color: #e51636;
+    border: 1px solid #b50923;
+    border-radius: 0px;
+    color: white;
+}
+
+.my_btn_primary:hover{
+    background-color: #d3d3d3;
+    border: 1px solid #555;
+    border-radius: 0px;
+    color: black;
+}
+
+.my_btn_default{
+    background-color: #3f3f3f;
+    border: 1px solid #000;
+    border-radius: 0px;
+    color: white;
+}
+
+.my_btn_default:hover{
+    background-color: #d3d3d3;
+    border: 1px solid #555;
+    border-radius: 0px;
+    color: black;
+}
+
+.my_footer {
+      position: static !important;
+      bottom: 0;
+      width: 100%;
+      /* Set the fixed height of the footer here */
+      height: 90px;
+      background-color: #3f3f3f;
+      padding: 20px;
+      text-align: center;
+      border-top: 3px solid #e51636;
+      margin-top: 20px;
+        }
+
+.my_modal{
+    border-radius: 0px;
+}
+
+.my_modal_header{
+    background-color: #e51636;
+}
+
+.my_modal_title{
+    color: white;
+}
+
+
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+
+  .my_form_body{
+  padding-top: 20px;
+}
+
+  .header_right{
+    margin-top: 20px;
+}
+  .dashboard_icons{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .page_title{
+  padding-left: 15px;
+  }
+.page_button{
+  padding-right: 15px;
+  }
+}
+
+/*MediaWorks Dashboard END*/
+
+/*MediaWorks Products START*/
+
+.img-thumbnail{
+  border-radius: 0px !important;
+}
+
+/*MediaWorks Products END*/
+
+/*MediaWorks DealerList START*/
+.mytable{
+  padding-top: 20px;
+}
+.page_title{
+  padding-left: 0px;
+}
+
+.page_button{
+  padding-right: 0px;
+}
+.add_btn_primary{
+  margin-top: 15px;
+  }
+
+.btn-search,.btn-search:hover,active{
+  color: white;
+}
+.p-form-control-1{border-radius:0px;}
+.p-btn-bradius{border-radius:0px; background-color:#3f3f3f; border:1px solid #000;}
+.p-btn-bradius:hover{border-radius:0px; background-color:#e51636; border:1px solid #b50923;}
+.p-btn-bradius:active{border-radius:0px; background-color:#e51636; border:1px solid #b50923;}
+.title_border{border-bottom: 2px solid #3f3f3f; padding: 3px 0px;}
+.p-bottom-border h4{color:#3f3f3f; padding:0px;}
+.search-padding-none{padding: 0px; margin:0px;}
+
+table,thead,tr,
+tbody,th,td {
+  text-align: center;
+    }
+
+/*Pagination Code Start*/
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+ul.pagination li a.active {
+    background-color: #cc1d00;
+    color: white;
+    border: 1px solid #cc1d00;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+/*Pagination Code End*/
+/*MediaWorks DealerList END*/
+
+
+/*AddDealer START*/
+.button_border{border-top: 1px solid #d3d3d3; padding-top: 15px; padding-right: 0px;}
+
+.file {
+  visibility: hidden;
+  position: absolute;
+}
+
+/*AddDealer END*/
+
+
+/*MW_GoodDealer START*/
+.second_row{
+  padding-top: 25px;
+}
+/*MW_GoodDealer END*/
+
+
+/*MW_HomeDealer START*/
+.add_more{
+  padding-bottom: 15px;
+}
+
+.page_sub_title{
+  padding-top: 10px;
+}
+
+@media only screen and (min-width: 310px) and (max-width: 760px) {
+  .add_more{
+    padding-bottom: 15px;
+  }
+}
+
+/*MW_HomeDealer END*/
+
+/*MW_ProductsDealer START*/
+@media only screen and (min-width: 310px) and (max-width: 760px) {
+  .utility_buttons{
+     padding-top: 20px;
+  }
+
+}
+
+/*ManageTemplate - Home START*/
+.separator{
+  border-bottom: 1px solid #d3d3d3; 
+  padding-top: 15px; 
+}
+
+@media only screen and (min-width: 310px) and (max-width: 760px) {
+.addmore{
+  padding-top: 15px;
+}
+
+.second_field{
+  padding-top: 10px;
+}
+
+}
+
+/*ManageTemplate - Home END*/
+
+.dz-default{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+

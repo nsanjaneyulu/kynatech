@@ -1,0 +1,392 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Mi Home</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/my_Styles.css">
+      <link rel="stylesheet" href="css/sidebar_Styles.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/my_Scripts.js"></script>
+      <style type="text/css">
+         
+      </style>
+   </head>
+   <body style="background: #eee !important;">
+      <nav class=" nav-Align navbar navbar-default header_Details">
+         <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+               <button type="button" class="navbar-toggle collapsed collapse_hide" data-toggle="collapse" data-target="#mani__menu" aria-expanded="false">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="#"><img src="img/logo.jpg" /></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse collapse_Allign" id="mani__menu">
+               <form class="navbar-form navbar-left">
+                  <div class="form-group">
+                     <div class="input-group search_Align"> <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">All <span class="caret"></span></button>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn" style="
+                           border: 3px solid #ccc; background: #ccc;
+                           ">
+                        <button class="btn btn-search" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span> 
+                     </div>
+                  </div>
+               </form>
+               <ul class="nav navbar-nav navcollapse_Allign">
+                  <li class="user small_Align">
+                     <a href="#">
+                     <img src="img/profile_Pic.jpg" class="img-circle" alt="">
+                     </a>
+                  </li>
+                  <li class="small_Align">
+                     <a href="#">
+                     <span class="fa fa-question-circle" aria-hidden="true"></span>
+                     <span>Help</span>
+                     </a>
+                  </li>
+                  <li class="small_Align">
+                     <a href="#">
+                     <span class="fa fa-cog" aria-hidden="true"></span>
+                     <span>Settings</span>
+                     </a>
+                  </li>
+                  <li class="small_Align">
+                     <a href="#">
+                     <span class="fa fa-circle-o-notch" aria-hidden="true"></span>
+                     <span>Logout</span>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+            <div class="clearfix"></div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container-fluid -->
+      </nav>
+      <section>
+         <div class="col-md-3 col-lg-2">
+            <div class="navbar navbar-default sidebar_Details" role="navigation">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <span class=" navbar-brand visible-xs">CATEGORIES MENU</span>
+               </div>
+               <div class="navbar-collapse collapse sidebar-navbar-collapse" style="padding:0px !important;">
+                  <h3 class="category_nav_thumbnail"><span>CATEGORIES</span></h3>
+                  <ul class="nav navbar-nav sidebar" id="sidenav01">
+                     <li class="branch active">
+                        <a href="#" data-toggle="collapse" data-target="#toggleDemo" data-parent="#sidenav01" class="collapsed">
+                        <span class="fa fa-building" aria-hidden="true"></span> Construction <span class="fa fa-cog icon__settings pull-right" aria-hidden="true"></span>
+                        </a>
+                        <ul class="menu__popup-menu list-unstyled">
+                           <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                           <li><a href="#modal__subCategory" data-toggle="modal">Add Sub - Category</a></li>
+                        </ul>
+                        <div class="collapse" id="toggleDemo" >
+                           <ul class="nav nav-list subnav">
+                              <li class="list-display"><a href="#">Elevation</a></li>
+                              <li class="list-display active"><a href="#">Floor Plan</a></li>
+                              <li class="list-display"><a href="#">Sprinkler System</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="branch">
+                        <a href="#" data-toggle="collapse" data-target="#toggleDemo2" data-parent="#sidenav01" class="collapsed">
+                        <span class="fa fa-check" aria-hidden="true"></span> Permits <span class="fa fa-cog icon__settings pull-right" aria-hidden="true"></span>           </a>
+                        <ul class="menu__popup-menu list-unstyled">
+                           <li><a href="#modal__alerts" data-toggle="modal">Alerts</a></li>
+                           <li><a href="#modal__subCategory" data-toggle="modal">Add Sub - Category</a></li>
+                        </ul>
+                        <div class="collapse" id="toggleDemo2">
+                           <ul class="nav nav-list subnav">
+                              <li  class="list-display"><a href="#">Balcony</a></li>
+                              <li  class="list-display active"><a href="#">Guest House</a></li>
+                              <li  class="list-display"><a href="#">Master Room</a></li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="branch"><a href="#"><span class="fa fa-search" aria-hidden="true"></span> Inspections <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-phone-square" aria-hidden="true"></span> Utilities <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-tachometer" aria-hidden="true"></span> HVAC <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-university" aria-hidden="true"></span> Exterior <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-money" aria-hidden="true"></span> Financial <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                     <li class="branch"><a href="#"><span class="fa fa-folder" aria-hidden="true"></span> General <span class="fa fa-cog pull-right" aria-hidden="true"></span></a></li>
+                  </ul>
+               </div>
+               <!--/.nav-collapse -->
+            </div>
+         </div>
+         <div class="col-md-9 col-lg-10">
+            <div class=" table-responsive" style="background:#fff;">
+               <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                  <thead>
+                     <tr>
+                        <th>Emp-Id</th>
+                        <th>Emp-Name</th>
+                        <th>sex</th>
+                        <th>DOB</th>
+                        <th>Nationality</th>
+                        <th>Designation</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>PIN Code</th>
+                        <th>Mobile No</th>
+                        <th>Email</th>
+                     </tr>
+                  </thead>
+                  <tfoot>
+                     <tr>
+                        <th>Emp-Id</th>
+                        <th>Emp-Name</th>
+                        <th>sex</th>
+                        <th>DOB</th>
+                        <th>Nationality</th>
+                        <th>Designation</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>PIN Code</th>
+                        <th>Mobile No</th>
+                        <th>Email</th>
+                     </tr>
+                  </tfoot>
+                  <tbody>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                     <tr>
+                        <td>KYN-2016072206</td>
+                        <td>SMITH</td>
+                        <td>Male</td>
+                        <td>61</td>
+                        <td>2016/04/25</td>
+                        <td>USA</td>
+                        <td>System Architect</td>
+                        <td>Edinburgh</td>
+                        <td>2072</td>
+                        <td>271-467-4567</td>
+                        <td>smith@personal.com</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+      </section>
+      <div class="clearfix"></div>
+      <footer class="footer_details">
+         <p class="col-sm-6">Copyright @ 2016 by <a target="_blanck" href="http://anjaneyulu.info/">Allwyn Corporation</a>All rights reserved.</p>
+         <ul class="col-sm-6 list-inline text-right">
+            <li><a href="#">Suport</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+         </ul>
+      </footer>
+   </body>
+</html>

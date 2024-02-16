@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      <title>MediaWorks - Products-ExperienceRED</title>
+      <!-- Bootstrap -->
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Custom CSS -->
+      <link href="css/styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link href="css/jquery.scrolltop.min.css" rel="stylesheet">
+      <!-- <link href="css/jquery.floating-social-share.css" rel="stylesheet"> -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="js/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/jquery.scrolltop.min.js"></script>
+      <!-- <script src="js/jquery.floating-social-share.js"></script> -->
+      <!--  Image and Video Thumbnail Gallary   -->
+      <script type='text/javascript' src='js/unitegallery.min.js'></script>
+      <link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+      <script type='text/javascript' src='unitegallery/themes/default/ug-theme-default.js'></script>
+      <script type='text/javascript' src='unitegallery/themes/compact/ug-theme-compact.js'></script>
+      <link rel='stylesheet' href='unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+      <style>
+         #menu a.selected {
+         color: red;
+         }
+         .button, .button:focus {
+         color: white;
+         text-decoration: none;
+         display: inline-block;
+         padding: 5px 10px;
+         background-color: teal;
+         }
+         .button:hover {
+         text-decoration: none;
+         color: white;
+         }
+         .custom-scrolltop {
+         font-size: 1.5em;
+         line-height: 40px;
+         border-radius: 50%;
+         }
+         *{
+         margin: 0;padding: 0;text-decoration: none; list-style: none;
+         }
+         .social-icons {
+         position: fixed;
+         right: 0;
+         top:50%;
+         transform:translateY(-50%) translateX(100%);
+         }
+         .social-icons li {
+         transform:translateX(-46px);
+         }
+         .social-icons li:hover {
+         transform:translateX(-100%);
+         }
+         .social-icons li span
+         {
+         background: #e51636;
+         color: #fff;
+         border-radius:100px;
+         padding: 3px;
+         }
+      </style>
+   </head>
+   <body>
+      <header class="header__top">
+         <div class="container header_logo_align">
+            <div class="row">
+               <div class="col-sm-4">
+                  <a href="#">
+                  <img src="img/dealer_logo.png" class="img-responsive">
+                  </a>
+               </div>
+               <div class="col-sm-4">
+               </div>
+               <div class="col-sm-4 header__address">
+                  <div>
+                     <ul class="location" dir="rtl">
+                        <li class="list-unstyled address_list"><img class="address_icon" src="img/hours_icon.png"> <span>9AM to 5PM</span></li>
+                        <li class="list-unstyled address_list"><img class="address_icon" src="img/call_icon.png"> <span>805-466-7296</span></li>
+                        <li class="list-unstyled address_list"><img class="address_icon" src="img/map_icon.png"> <span>3850 El Camino Real<br> Atascadero, CA 93422</span></li>
+                        <li class="list-unstyled address_list"><a href="#" class="vm-locations"><b>View More Locations</b></a></li>
+                        <li style="list-style-type: none;"><a href="#">
+                           <img src="img/mahindra_logo.png" class="img-responsive">
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <nav class="navbar navbar-default">
+            <div class="container">
+               <div class="row">
+                  <!-- Brand and toggle get grouped for better mobile display -->
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     </button>
+                  </div>
+                  <div class="navbar-header navbar-default">
+                     <!-- Collect the nav links, forms, and other content for toggling -->
+                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                           <li><a href="MediaWorks_Home_V1.html">HOME</a></li>
+                           <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PRODUCTS<span class="caret"></span></a>
+                              <ul class="dropdown-menu dd-menu" role="menu">
+                                 <li><a href="#">TRACTORS</a></li>
+                                 <li class="divider dd-menu-divider"></li>
+                                 <li><a href="#">UTILITY VEHICLES</a></li>
+                                 <li class="divider dd-menu-divider"></li>
+                                 <li><a href="#">IMPLEMENTS</a></li>
+                                 <li class="divider dd-menu-divider"></li>
+                                 <li><a href="#">ATTACHMENTS</a></li>
+                                 <li class="divider dd-menu-divider"></li>
+                                 <li><a href="#">INVENTORY</a></li>
+                                 <li class="divider dd-menu-divider"></li>
+                                 <li><a href="#">SPECIALS & DISCOUNTS</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="#">PARTS</a></li>
+                           <li><a href="#">SERVICE</a></li>
+                           <li><a href="#">FINANCE</a></li>
+                           <li><a href="#">BUILD MY MAHINDRA</a></li>
+                           <li><a href="#">ExperienceRED<sup>TM</sup></a></li>
+                           <li><a href="#">CONTACT</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right social-network social-circle">
+                           <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                           <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                           <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <section class="container">
+         <h3 class="title__main" style="text-transform: none !important;">ExperienceRED<sup>TM</sup> </h3>
+         <div class="text-center">
+            <h3 class="title text-uppercase main-title"><b>View Current and Prior Newsmagazine Issues</b></h3>
+         </div>
+         <div class="text-center">
+            <p>Click on a thumbnail below to read the issue :</p>
+         </div>
+         <div class="clearfix"></div>
+         <div class="col-sm-12 col-md-12 col-xs-12">
+            <h5 class="title__sub">Newsmagazine</h5>
+            <div class="title_separator"></div>
+            <div class="col-sm-12 col-md-12 col-xs-12 news_magazines" align="middle">
+               <div class="col-sm-3 col-md-2 col-xs-12 text-center">
+                  <a href="#"><img src="img/Exp-Red_News-Magazines_thumb-1.png">
+                  <p class="ancrtag_label">Fall 2016</p></a>
+               </div>
+               <div class="col-sm-3 col-md-2 col-xs-12 text-center">
+                  <a href="#"><img src="img/Exp-Red_News-Magazines_thumb-2.png">
+                  <p class="ancrtag_label">Summer 2016</p></a>
+               </div>
+               <div class="col-sm-3 col-md-2 col-xs-12 text-center">
+                  <a href="#"><img src="img/Exp-Red_News-Magazines_thumb-3.png">
+                  <p class="ancrtag_label">Spring 2016</p></a>
+               </div>
+               <div class="col-sm-3 col-md-2 col-xs-12 text-center">
+                  <a href="#"><img src="img/Exp-Red_News-Magazines_thumb-4.png">
+                  <p class="ancrtag_label">Winter 2015</p></a>
+               </div>
+               <div class="col-sm-3 col-md-2 col-xs-12 text-center">
+                  <a href="#"><img src="img/Exp-Red_News-Magazines_thumb-4.png">
+                  <p class="ancrtag_label">Winter 2014</p></a>
+               </div>
+               <div class="col-sm-3 col-md-2 col-xs-12 text-center">
+                  <a href="#"><img src="img/Exp-Red_News-Magazines_thumb-4.png">
+                  <p class="ancrtag_label">Winter 2013</p></a>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-12 col-md-12 col-xs-12">
+            <h5 class="title__sub">Video Gallery</h5>
+            <div class="title_separator"></div>
+            <div class="row col-md-10 col-md-offset-1" style="padding:20px 0px;">
+               <div class="col-sm-12">
+                  <div id="gallery1" style="display:none;">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                     <img alt="Youtube Video"
+                        data-type="youtube"
+                        data-videoid="uCGi57mxxGk"
+                        data-description="You can include youtube videos easily!">
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-sm-12 col-md-12 col-xs-12">
+            <h5 class="title__sub">Image Gallery</h5>
+            <div class="title_separator"></div>
+            <div class="row col-md-10 col-md-offset-1" style="padding:20px 0px;">
+            <div class="col-sm-12">
+               <div id="gallery2" style="display:none;">
+                  <img alt="Preview Image 1"
+                     src="images/thumbs/thumb5.jpg"
+                     data-image="images/big/image5.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 2">
+                  <img alt="Preview Image 2"
+                     src="images/thumbs/thumb6.jpg"
+                     data-image="images/big/image6.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 3">
+                  <img alt="Preview Image 3"
+                     src="images/thumbs/thumb7.jpg"
+                     data-image="images/big/image7.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 4">
+                  <img alt="Preview Image 4"
+                     src="images/thumbs/thumb8.jpg"
+                     data-image="images/big/image8.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 5">
+                  <img alt="Preview Image 5"
+                     src="images/thumbs/thumb5.jpg"
+                     data-image="images/big/image5.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 6">
+                  <img alt="Wistia Video"
+                     src="images/thumbs/wistia_video.jpg"
+                     data-type="wistia"
+                     data-image="images/big/wistia_video.jpg"
+                     data-videoid="9oedgxuciv"
+                     data-description="Lorem Ipsum is simply dummy videos 6 too!">
+                  <img alt="Preview Image 6"
+                     src="images/thumbs/thumb6.jpg"
+                     data-image="images/big/image6.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 7">
+                  <img alt="Sound Cloud Track"
+                     src="images/thumbs/sound_cloud.jpg"
+                     data-type="soundcloud"
+                     data-image="images/thumbs/sound_cloud.jpg"
+                     data-trackid="8390970"
+                     data-description="Lorem Ipsum is simply dummy text 8">
+                  <img alt="Preview Image 7"
+                     src="images/thumbs/thumb7.jpg"
+                     data-image="images/big/image7.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 9">
+                  <img alt="Preview Image 8"
+                     src="images/thumbs/thumb8.jpg"
+                     data-image="images/big/image8.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 10">
+                  <img alt="Preview Image 9"
+                     src="images/thumbs/thumb5.jpg"
+                     data-image="images/big/image5.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 11">
+                  <img alt="Preview Image 10"
+                     src="images/thumbs/thumb6.jpg"
+                     data-image="images/big/image6.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 12">
+                  <img alt="Preview Image 11"
+                     src="images/thumbs/thumb7.jpg"
+                     data-image="images/big/image7.jpg"
+                     data-description="Lorem Ipsum is simply dummy text 13">
+               </div>
+            </div>
+         </div>
+         </div>
+         <div class="col-sm-12 col-md-12 col-xs-12">
+            <h5 class="title__sub">News Articles</h5>
+            <div class="title_separator"></div>
+            <div class="col-sm-12 col-md-12 news_magazines">
+               <div class="col-sm-6 col-md-6 col-xs-12">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>
+               <div class="col-sm-6 col-md-6 col-xs-12 ">
+                  <a href="#" class=""><label><b>Lorem Ipsum</b></label>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p></a>
+               </div>   
+            </div>
+         </div>
+      </section>
+      <div class="clearfix"></div>
+      <footer>
+         <div class="container">
+            <div class="row footer__bottom_align">
+               <div class="col-sm-2">
+                  <button type="button" class="btn d-login-btn">DEALER LOGIN</button>
+               </div>
+               <div class="col-sm-2">
+                  <h5 class="footer__link__title">Lorium Ipsum</h5>
+                  <ul class="footer__links">
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-2">
+                  <h5 class="footer__link__title">Lorium Ipsum</h5>
+                  <ul class="footer__links">
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-2">
+                  <h5 class="footer__link__title">Lorium Ipsum</h5>
+                  <ul class="footer__links">
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-2">
+                  <h5 class="footer__link__title">Lorium Ipsum</h5>
+                  <ul class="footer__links">
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-2">
+                  <h5 class="footer__link__title">Lorium Ipsum</h5>
+                  <ul class="footer__links">
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                     <li><a href="#">Lorium Ipsum</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-sm-12 footer_bottom_copyright">
+               <p>&copy;2016 Mahindra Dealers All rights reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <ul class='social-icons'>
+         <li><a href=""><img src="img/live_chat.png" /><span>Live Chat</span></a></li>
+         <li><a href=""><img src="img/request-a-quote.png" /><span>Request a Quote</span></a></li>
+      </ul>
+      <!-- <ul class="social-icons">
+         <li><a href=""><img src="http://www.diligenllp.com/wp-content/uploads/2015/06/facebook-icon.png" alt="facebook" class="icon">Facebook</a></li>
+         <li><a href=""><img src="http://www.diligenllp.com/wp-content/uploads/2015/06/linkedin-icon.png" alt="facebook" class="icon">Linked in</a></li>
+         <li><a href=""><img src="http://www.diligenllp.com/wp-content/uploads/2015/06/twitter-icon.png" class="icon">Twitter</a></li>
+         </ul> -->
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+         
+         
+         
+             jQuery("#gallery").unitegallery({
+                 gallery_theme: "compact",
+                 theme_panel_position: "left",
+                 thumb_width:60,
+                 thumb_height:60,
+                 strippanel_enable_buttons: true,           //enable buttons from the sides of the panel
+                 strippanel_buttons_skin: "",
+             });
+             jQuery("#gallery1").unitegallery({
+                 thumb_width:120,
+                 thumb_height:70
+             });
+         
+         });
+         
+      </script>
+      <script type="text/javascript">
+         jQuery(document).ready(function(){
+         
+         
+         
+             jQuery("#gallery").unitegallery({
+                 gallery_theme: "compact",
+                 theme_panel_position: "left",
+                 thumb_width:60,
+                 thumb_height:60,
+                 strippanel_enable_buttons: true,           //enable buttons from the sides of the panel
+                 strippanel_buttons_skin: "",
+             });
+             jQuery("#gallery2").unitegallery({
+                 thumb_width:120,
+                 thumb_height:70
+             });
+         
+         });
+         
+      </script>
+      <script>
+         (function($){
+         
+             $.scrolltop({
+                 template: '<i class="fa fa-chevron-up"></i>',
+                 class: 'custom-scrolltop'
+             });
+         
+         })(jQuery);
+         
+      </script>
+      <!-- <script>
+         $("body").floatingSocialShare({
+             buttons: ["facebook", "google-plus", "linkedin", "pinterest", "reddit", "stumbleupon", "tumblr", "twitter", "vk"],
+             twitter_counter: true,
+             text: "share with: ",
+             url: "http://google.com"
+         });
+         </script> -->
+         <!-- Start of LiveChat (www.livechatinc.com) code -->
+
+   </body>
+</html>
